@@ -107,6 +107,7 @@ function analyzeSalesData(data, options) {
       // Посчитать прибыль: выручка минус себестоимость
       const profit = revenue - cost;
       // Увеличить общую накопленную прибыль (profit) у продавца
+      seller.profit += profit;
 
       // Учёт количества проданных товаров
       if (!seller.products_sold[item.sku]) {
